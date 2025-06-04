@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Ponte Solidária - Cadastro/Login</title>
 </head>
 <body>
     
+    <div class="container">
+        <div class="formBox login">
+            <form>
+                <h2>Cadastro</h2>
+                <div class="inputbox">
+                    <label for="nome">Nome</label>
+                    <i class="bi bi-person"></i>
+                    <input type="text" name="nome" required>
+                </div>
+                <div class="inputbox">
+                    <label for="email">E-mail</label>
+                    <i class="bi bi-envelope"></i>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="inputbox">
+                    <label for="senha">Senha</label>
+                    <i class="bi bi-lock"></i>
+                    <input type="password" name="senha" required>
+                </div>
+                <div class="inputbox">
+                    <input type="radio" name="tipo" value="doador" id="doador" checked>
+                    <label for="doador">Doador</label>
+                    <input type="radio" name="tipo" value="receptor" id="receptor">
+                    <label for="receptor">Receptor</label>
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
