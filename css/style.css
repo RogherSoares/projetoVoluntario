@@ -164,3 +164,20 @@ form input[type="submit"]:hover {
   width: 80%;
   max-width: 400px;
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #ccc;
+  border-top: 4px solid #0066cc;
+}
