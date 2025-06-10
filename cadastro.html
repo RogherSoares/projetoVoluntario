@@ -19,35 +19,32 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="formBox login">
-            <form>
-                <h2>Cadastro</h2>
-                <div class="inputbox">
-                    <label for="nome">Nome</label>
-                    <i class="bi bi-person"></i>
-                    <input type="text" name="nome" required>
-                </div>
-                <div class="inputbox">
-                    <label for="email">E-mail</label>
-                    <i class="bi bi-envelope"></i>
-                    <input type="email" name="email" required>
-                </div>
-                <div class="inputbox">
-                    <label for="senha">Senha</label>
-                    <i class="bi bi-lock"></i>
-                    <input type="password" name="senha" required>
-                </div>
-                <div class="inputbox">
-                    <input type="radio" name="tipo" value="doador" id="doador" checked>
-                    <label for="doador">Doador</label>
-                    <input type="radio" name="tipo" value="receptor" id="receptor">
-                    <label for="receptor">Receptor</label>
-                </div>
-                <button type="submit">Cadastrar</button>
-            </form>
-        </div>
-    </div>
+
+    <main>
+        <form id="formNecessidade">
+            <label>Nome da Instituição:<input type="text" name="instituicao" required></label>
+            <label>Tipo de Ajuda:
+                <select name="tipoAjuda" required>
+                    <option value="">Selecione</option>
+                    <option>Educação</option>
+                    <option>Saúde</option>
+                    <option>Meio Ambiente</option>
+                    <option>Doação de Alimentos</option>
+                    <option>Doação de Roupas</option>
+                    <option>Outros</option>
+                </select>
+            </label>
+            <label>Título da Necessidade:<input type="text" name="titulo" required></label>
+            <label>Descrição:<textarea name="descricao" required></textarea></label>
+            <label>CEP:<input type="text" name="cep" id="cep" required></label>
+            <label>Rua:<input type="text" name="rua" id="rua" readonly></label>
+            <label>Bairro:<input type="text" name="bairro" id="bairro" readonly></label>
+            <label>Cidade:<input type="text" name="cidade" id="cidade" readonly></label>
+            <label>Estado:<input type="text" name="estado" id="estado" readonly></label>
+            <label>Contato:<input type="text" name="contato" required></label>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
 
 </body>
 
