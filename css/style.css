@@ -1,32 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 body {
-  background-color: #f7f9fc;
-  color: #333;
-  line-height: 1.6;
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Cabeçalho */
 
 header {
-  background-color: #004080;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+    background-color: #004080;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
 
 h1 {
     font-size: 2.5rem;
 }
+
 h2 {
     font-size: 2rem;
 }
+
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
@@ -36,65 +40,116 @@ p {
 /* Navegação */
 
 a {
-  text-decoration: none;
-  color: #0066cc;
-  font-size: 1.2rem;
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 1.2rem;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 nav a {
-  color: white;
-  font-weight: bold;
+    color: white;
+    font-weight: bold;
 }
 
 /* Banner */
 .banner {
-  background: linear-gradient(to right, #0066cc, #3399ff);
-  color: white;
-  text-align: center;
-  padding: 3rem 1rem;
+    background: linear-gradient(to right, #0066cc, #3399ff);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
 }
 
 .banner .btn {
-  background-color: white;
-  color: #0066cc;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  font-weight: bold;
-  margin-top: 1rem;
-  display: inline-block;
+    background-color: white;
+    color: #0066cc;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
 }
 
 /* Seção: Como Funciona */
 .como-funciona {
-  padding: 2rem 1rem;
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
 }
 
 .passos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 .passo {
-  background: white;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  width: 300px;
-  border-radius: 8px;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    width: 300px;
+    border-radius: 8px;
+}
+
+/* Formulário */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+form label {
+    font-size: 1.3rem;
+}
+
+form input,
+form textarea,
+form select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+form button,
+form input[type="submit"] {
+    background-color: white;
+    color: #0066cc;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 6px #eee;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+    background-color: #0066cc;
+    color: white;
 }
