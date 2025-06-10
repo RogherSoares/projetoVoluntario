@@ -5,7 +5,7 @@ const filtro = document.getElementById("filtroTipoAjuda");
 let necessidades = JSON.parse(localStorage.getItem("necessidades")) || [];
 
 function criarCard(n) {
-  return `
+    return `
     <div class="card">
       <h3>${n.titulo}</h3>
       <p><strong>Instituição:</strong> ${n.instituicao}</p>
@@ -18,7 +18,24 @@ function criarCard(n) {
 }
 
 function renderizarLista(filtradas = necessidades) {
-  lista.innerHTML = filtradas.map(criarCard).join("") || "<p>Nenhuma necessidade encontrada.</p>";
+    lista.innerHTML = filtradas.map(criarCard).join("") || "<p>Nenhuma necessidade encontrada.</p>";
 }
 
+function filtrar() {
+    const texto = pesquisa.value.toLowerCase();// converte o texto da pesquisa para minúsculas
+    const tipo = filtro.value;// obtém o valor do filtro de tipo de ajuda
+
+    // Filtra as necessidades com base no texto e no tipo de ajuda
+    const resultado = necessidades.filter(n =>
+        (n.titulo.toLowerCase().includes(texto) || n.descricao.toLowerCase().includes(texto)) &&
+        (tipo === "" || n.tipoAjuda === tipo)// verifica se o tipo de ajuda é igual ao selecionado ou se não há filtro
+    );
+
+    renderizarLista(resultado);
+}
+
+pesquisa.addEventListener("input", filtrar);
+filtro.addEventListener("change", filtrar);
+
+//renderiza a lista inicial
 renderizarLista();

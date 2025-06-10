@@ -176,7 +176,7 @@ form input[type="submit"]:hover {
 .card {
   background: white;
   padding: 1rem;
-  width: 280px;
+  width: 320px;
   border-radius: 8px;
   box-shadow: 0 0 8px #ccc;
   border-top: 4px solid #0066cc;
