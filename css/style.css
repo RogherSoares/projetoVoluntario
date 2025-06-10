@@ -47,3 +47,21 @@ nav a {
   color: white;
   font-weight: bold;
 }
+
+/* Banner */
+.banner {
+  background: linear-gradient(to right, #0066cc, #3399ff);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.banner .btn {
+  background-color: white;
+  color: #0066cc;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
+}
