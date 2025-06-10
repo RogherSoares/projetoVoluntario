@@ -153,3 +153,14 @@ form input[type="submit"]:hover {
     background-color: #0066cc;
     color: white;
 }
+
+/* Lista de necessidades */
+
+#pesquisa,
+#filtroTipoAjuda {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  width: 80%;
+  max-width: 400px;
+}
