@@ -9,15 +9,14 @@
 }
 
 body {
-    background-color: rgb(247, 249, 252);
-    color: rgb(51, 51, 51);
+    background-color: rgb(255, 249, 235); 
+    color: rgb(51, 51, 51); 
     line-height: 1.6;
 }
 
 /* Cabeçalho */
-
 header {
-    background-color: rgb(0, 64, 128);
+    background-color: rgb(84, 110, 122); 
     color: rgb(255, 255, 255);
     padding: 1rem;
     text-align: center;
@@ -38,10 +37,9 @@ p {
 }
 
 /* Navegação */
-
 a {
     text-decoration: none;
-    color: rgb(0, 102, 204);
+    color: rgb(255, 183, 77); 
     font-size: 1.2rem;
 }
 
@@ -59,24 +57,34 @@ nav ul {
 nav a {
     color: rgb(255, 255, 255);
     font-weight: bold;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: rgb(255, 183, 77); 
 }
 
 /* Banner */
 .banner {
-    background: linear-gradient(to right, rgb(0, 102, 204), rgb(51, 153, 255));
+    background: linear-gradient(to right, rgb(84, 110, 122), rgb(174, 213, 129));
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 3rem 1rem;
 }
 
 .banner .btn {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 102, 204);
+    background-color: rgb(255, 183, 77); 
+    color: rgb(84, 110, 122); 
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     font-weight: bold;
     margin-top: 1rem;
     display: inline-block;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+}
+.banner .btn:hover {
+    background-color: rgb(84, 110, 122); 
+    color: rgb(255, 249, 235); 
 }
 
 /* Seção: Como Funciona */
@@ -98,7 +106,7 @@ nav a {
 .passo {
     background: rgb(255, 255, 255);
     padding: 1rem;
-    border: 1px solid rgb(221, 221, 221);
+    border: 2px solid rgb(174, 213, 129); 
     width: 300px;
     border-radius: 8px;
 }
@@ -107,10 +115,10 @@ nav a {
 form {
     max-width: 600px;
     margin: 2rem auto;
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgb(204, 204, 204);
+    box-shadow: 0 0 10px rgb(174, 213, 129, 0.2);
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -120,6 +128,7 @@ form label {
     display: flex;
     flex-direction: column;
     font-weight: bold;
+    color: rgb(84, 110, 122); 
 }
 
 form label {
@@ -130,14 +139,22 @@ form input,
 form textarea,
 form select {
     padding: 0.5rem;
-    border: 1px solid rgb(204, 204, 204);
+    border: 1px solid rgb(174, 213, 129); 
     border-radius: 4px;
     font-size: 1rem;
+    background: rgb(255, 249, 235); 
+    color: rgb(51, 51, 51);
 }
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: 2px solid rgb(255, 183, 77); 
+}
+
 form button,
 form input[type="submit"] {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 102, 204);
+    background-color: rgb(255, 183, 77); 
+    color: rgb(84, 110, 122); 
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 5px;
@@ -145,17 +162,15 @@ form input[type="submit"] {
     font-size: 1.1rem;
     cursor: pointer;
     transition: background 0.2s, color 0.2s;
-    box-shadow: 0 2px 6px rgb(238, 238, 238);
+    box-shadow: 0 2px 6px rgb(174, 213, 129, 0.2);
 }
-
 form button:hover,
 form input[type="submit"]:hover {
-    background-color: rgb(0, 102, 204);
-    color: rgb(255, 255, 255);
+    background-color: rgb(84, 110, 122); 
+    color: rgb(255, 249, 235); 
 }
 
 /* Lista de necessidades */
-
 #pesquisa,
 #filtroTipoAjuda {
   display: block;
@@ -163,6 +178,10 @@ form input[type="submit"]:hover {
   padding: 0.5rem;
   width: 80%;
   max-width: 400px;
+  border: 1px solid rgb(174, 213, 129);
+  border-radius: 4px;
+  background: rgb(255, 249, 235);
+  color: rgb(51, 51, 51);
 }
 
 .cards {
@@ -178,15 +197,15 @@ form input[type="submit"]:hover {
   padding: 1rem;
   width: 320px;
   border-radius: 8px;
-  box-shadow: 0 0 8px rgb(204, 204, 204);
-  border-top: 4px solid rgb(0, 102, 204);
+  box-shadow: 0 0 8px rgb(174, 213, 129, 0.2);
+  border-top: 4px solid rgb(255, 183, 77); 
 }
 
 /* Rodapé */
 footer {
   text-align: center;
   padding: 1rem;
-  background: rgb(238, 238, 238);
+  background: rgb(84, 110, 122); 
   margin-top: 2rem;
 }
 
