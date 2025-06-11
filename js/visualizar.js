@@ -7,7 +7,7 @@ let necessidades = JSON.parse(localStorage.getItem("necessidades")) || [];
 function criarCard(n) {
     return `
     <div class="card">
-      <h3>${n.titulo}</h3>
+      <h3 class="card-titulo">${n.titulo}</h3>
       <p><strong>Instituição:</strong> ${n.instituicao}</p>
       <p><strong>Tipo de Ajuda:</strong> ${n.tipoAjuda}</p>
       <p><strong>Descrição:</strong> ${n.descricao}</p>

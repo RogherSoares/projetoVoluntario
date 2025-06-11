@@ -201,6 +201,14 @@ form input[type="submit"]:hover {
   border-top: 4px solid rgb(255, 183, 77); 
 }
 
+.card-titulo {
+    color: rgb(255, 183, 77); /* Laranja suave */
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
 /* Rodapé */
 footer {
   text-align: center;
