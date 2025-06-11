@@ -4,9 +4,10 @@ const filtro = document.getElementById("filtroTipoAjuda");
 
 let necessidades = JSON.parse(localStorage.getItem("necessidades")) || [];
 
-function criarCard(n) {
+function criarCard(n, idx) {
     return `
     <div class="card">
+      <button class="btn-excluir" data-id="${idx}" title="Excluir necessidade">&times;</button>
       <h3 class="card-titulo">${n.titulo}</h3>
       <p><strong>Instituição:</strong> ${n.instituicao}</p>
       <p><strong>Tipo de Ajuda:</strong> ${n.tipoAjuda}</p>
@@ -18,7 +19,19 @@ function criarCard(n) {
 }
 
 function renderizarLista(filtradas = necessidades) {
-    lista.innerHTML = filtradas.map(criarCard).join("") || "<p>Nenhuma necessidade encontrada.</p>";
+    lista.innerHTML = filtradas.map((n, idx) => criarCard(n, idx)).join("") || "<p>Nenhuma necessidade encontrada.</p>";
+
+    // Adiciona eventos aos botões de excluir
+    document.querySelectorAll('.btn-excluir').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const id = Number(this.getAttribute('data-id'));
+            if (confirm('Tem certeza que deseja excluir esta necessidade?')) {// confirma a exclusão
+                necessidades.splice(id, 1);// remove a necessidade do array
+                localStorage.setItem("necessidades", JSON.stringify(necessidades));
+                renderizarLista();// atualiza a lista renderizada
+            }
+        });
+    });
 }
 
 function filtrar() {

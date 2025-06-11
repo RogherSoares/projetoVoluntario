@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -193,6 +192,7 @@ form input[type="submit"]:hover {
 }
 
 .card {
+  position: relative;
   background: rgb(255, 255, 255);
   padding: 1rem;
   width: 320px;
@@ -202,11 +202,32 @@ form input[type="submit"]:hover {
 }
 
 .card-titulo {
-    color: rgb(255, 183, 77); /* Laranja suave */
+    color: rgb(255, 183, 77); 
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+.btn-excluir {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgb(255, 255, 255);
+    color: rgb(84, 110, 122);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    z-index: 2;
+}
+.btn-excluir:hover {
+    background: rgb(84, 110, 122);
+    color: rgb(255, 249, 235);
 }
 
 /* Rodapé */
