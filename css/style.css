@@ -9,16 +9,16 @@
 }
 
 body {
-    background-color: #f7f9fc;
-    color: #333;
+    background-color: rgb(247, 249, 252);
+    color: rgb(51, 51, 51);
     line-height: 1.6;
 }
 
 /* Cabeçalho */
 
 header {
-    background-color: #004080;
-    color: white;
+    background-color: rgb(0, 64, 128);
+    color: rgb(255, 255, 255);
     padding: 1rem;
     text-align: center;
 }
@@ -41,7 +41,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #0066cc;
+    color: rgb(0, 102, 204);
     font-size: 1.2rem;
 }
 
@@ -57,21 +57,21 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
 /* Banner */
 .banner {
-    background: linear-gradient(to right, #0066cc, #3399ff);
-    color: white;
+    background: linear-gradient(to right, rgb(0, 102, 204), rgb(51, 153, 255));
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 3rem 1rem;
 }
 
 .banner .btn {
-    background-color: white;
-    color: #0066cc;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 102, 204);
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     font-weight: bold;
@@ -96,9 +96,9 @@ nav a {
 }
 
 .passo {
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(221, 221, 221);
     width: 300px;
     border-radius: 8px;
 }
@@ -110,7 +110,7 @@ form {
     background: white;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px rgb(204, 204, 204);
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -130,14 +130,14 @@ form input,
 form textarea,
 form select {
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     border-radius: 4px;
     font-size: 1rem;
 }
 form button,
 form input[type="submit"] {
-    background-color: white;
-    color: #0066cc;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 102, 204);
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 5px;
@@ -145,13 +145,13 @@ form input[type="submit"] {
     font-size: 1.1rem;
     cursor: pointer;
     transition: background 0.2s, color 0.2s;
-    box-shadow: 0 2px 6px #eee;
+    box-shadow: 0 2px 6px rgb(238, 238, 238);
 }
 
 form button:hover,
 form input[type="submit"]:hover {
-    background-color: #0066cc;
-    color: white;
+    background-color: rgb(0, 102, 204);
+    color: rgb(255, 255, 255);
 }
 
 /* Lista de necessidades */
@@ -174,19 +174,19 @@ form input[type="submit"]:hover {
 }
 
 .card {
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 1rem;
   width: 320px;
   border-radius: 8px;
-  box-shadow: 0 0 8px #ccc;
-  border-top: 4px solid #0066cc;
+  box-shadow: 0 0 8px rgb(204, 204, 204);
+  border-top: 4px solid rgb(0, 102, 204);
 }
 
 /* Rodapé */
 footer {
   text-align: center;
   padding: 1rem;
-  background: #eee;
+  background: rgb(238, 238, 238);
   margin-top: 2rem;
 }
 
