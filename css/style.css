@@ -168,6 +168,11 @@ form input[type="submit"]:hover {
     background-color: rgb(84, 110, 122); 
     color: rgb(255, 249, 235); 
 }
+/* Estilo para campos de preenchimento automático */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px rgb(255, 249, 235) inset !important; 
+    color: rgb(51, 51, 51); 
+}
 
 /* Lista de necessidades */
 #pesquisa,
