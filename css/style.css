@@ -1,187 +1,192 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: rgb(248, 249, 250); 
-    color: rgb(33, 37, 41); 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(248, 249, 250);
+  color: rgb(33, 37, 41);
 }
 
 main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 /* Cabeçalho */
 header {
-    background-color: rgb(13, 148, 136); 
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+  background-color: rgb(13, 148, 136);
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  text-align: center;
 }
 
 h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 /* Navegação */
 a {
-    color: rgb(249, 115, 22); 
-    text-decoration: none;
-    transition: color 0.2s;
+  color: rgb(249, 115, 22);
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
 a:hover {
-    color: rgb(13, 148, 136);
+  color: rgb(13, 148, 136);
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 nav a {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    transition: color 0.2s;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  transition: color 0.2s;
 }
+
 nav a:hover {
-    color: rgb(255, 183, 77); 
+  color: rgb(255, 183, 77);
 }
 
 /* Banner */
 .banner {
-    background:  rgb(84, 110, 122);
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 3rem 1rem;
+  background: rgb(84, 110, 122);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 3rem 1rem;
 }
 
 .banner .btn {
-    background-color: rgb(255, 183, 77); 
-    color: rgb(84, 110, 122); 
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 1rem;
-    display: inline-block;
-    border: none;
-    transition: background 0.2s, color 0.2s;
+  background-color: rgb(255, 183, 77);
+  color: rgb(84, 110, 122);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
+  border: none;
+  transition: background 0.2s, color 0.2s;
 }
+
 .banner .btn:hover {
-    background-color: rgb(249, 115, 22); 
-    color: rgb(255, 249, 235); 
+  background-color: rgb(249, 115, 22);
+  color: rgb(255, 249, 235);
 }
 
 /* Seção: Como Funciona */
 .como-funciona {
-    padding: 2rem 1rem;
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
 }
 
 .passos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .passo {
-    background: rgb(255, 255, 255);
-    padding: 1rem;
-    border: 2px solid rgb(174, 213, 129); 
-    width: 300px;
-    border-radius: 8px;
+  background: rgb(255, 255, 255);
+  padding: 1rem;
+  border: 2px solid rgb(174, 213, 129);
+  width: 300px;
+  border-radius: 8px;
 }
 
 /* Formulário */
 form {
-    max-width: 600px;
-    margin: 2rem auto;
-    background: rgb(255, 255, 255);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgb(174, 213, 129, 0.2);
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  background: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(174, 213, 129, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 form label {
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-    color: rgb(84, 110, 122); 
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: rgb(84, 110, 122);
 }
 
 form label {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 form input,
 form textarea,
 form select {
-    padding: 0.5rem;
-    border: 1px solid rgb(13, 148, 136);
-    border-radius: 4px;
-    font-size: 1rem;
-    background: rgb(248, 249, 250);
-    color: rgb(33, 37, 41);
+  padding: 0.5rem;
+  border: 1px solid rgb(13, 148, 136);
+  border-radius: 4px;
+  font-size: 1rem;
+  background: rgb(248, 249, 250);
+  color: rgb(33, 37, 41);
 }
+
 form input:focus,
 form textarea:focus,
 form select:focus {
-    outline: 2px solid rgb(249, 115, 22); 
+  outline: 2px solid rgb(249, 115, 22);
 }
 
 form button,
 form input[type="submit"] {
-    background-color: rgb(249, 115, 22); 
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 0.75rem 1.5rem;
-    font-weight: bold;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s;
-    box-shadow: 0 2px 6px rgb(174, 213, 129, 0.2);
+  background-color: rgb(249, 115, 22);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 6px rgb(174, 213, 129, 0.2);
 }
+
 form button:hover,
 form input[type="submit"]:hover {
-    background-color: rgb(13, 148, 136); 
-    color: #fff;
+  background-color: rgb(13, 148, 136);
+  color: #fff;
 }
+
 /* Estilo para campos de preenchimento automático */
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px rgb(255, 249, 235) inset !important; 
-    color: rgb(51, 51, 51); 
+  -webkit-box-shadow: 0 0 0 1000px rgb(255, 249, 235) inset !important;
+  color: rgb(51, 51, 51);
 }
 
 /* Lista de necessidades */
@@ -208,7 +213,7 @@ input:-webkit-autofill {
 
 .card {
   position: relative;
-  background: #fff;
+  background: rgb(255, 255, 255);
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(13, 148, 136, 0.10);
   border-top: 4px solid rgb(13, 148, 136);
@@ -218,42 +223,105 @@ input:-webkit-autofill {
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  transform: translateY(-5px);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 }
 
 .card-titulo {
-    color: rgb(249, 115, 22); 
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    letter-spacing: 1px;
+  color: rgb(249, 115, 22);
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
 }
 
 .btn-excluir {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    background: rgb(255, 255, 255); 
-    color: rgb(13, 148, 136);
-    border: none;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    font-size: 1.3rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s;
-    z-index: 2;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgb(255, 255, 255);
+  color: rgb(13, 148, 136);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  z-index: 2;
 }
+
 .btn-excluir:hover {
-    background: rgb(13, 148, 136); 
-    color: #fff;
+  background: rgb(13, 148, 136);
+  color: #fff;
+}
+
+/* Importância do Voluntariado */
+.importancia-voluntariado {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: rgb(248, 249, 250);
+  border-radius: 12px;
+}
+
+.importancia-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.importancia-card {
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(13, 148, 136, 0.10);
+  border-top: 4px solid rgb(13, 148, 136);
+  padding: 1.5rem 1rem 1rem 1rem;
+  flex: 1 1 45%;
+  max-width: 48%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.importancia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.importancia-img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid rgb(249, 115, 22);
+  background: rgb(248, 249, 250);
+}
+
+.importancia-card h3 {
+  color: rgb(249, 115, 22);
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.importancia-card p {
+  color: rgb(33, 37, 41);
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 /* Rodapé */
 footer {
-  background-color: rgb(33, 37, 41); 
+  background-color: rgb(33, 37, 41);
   color: #fff;
   text-align: center;
   padding: 1rem;
@@ -266,14 +334,39 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+
   .cards {
     flex-direction: column;
     align-items: center;
   }
+
+  .importancia-card {
+    max-width: 50%;
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .importancia-cards {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .importancia-card {
+    width: 100%;
+    max-width: 350px;
+  }
 }
 
 @media (max-width: 600px) {
-  header, .banner, .como-funciona, form, .cards, footer {
+
+  header,
+  .banner,
+  .como-funciona,
+  form,
+  .cards,
+  footer {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
