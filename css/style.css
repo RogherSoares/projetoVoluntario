@@ -319,6 +319,49 @@ input:-webkit-autofill {
   font-weight: 500;
 }
 
+/* Endereço */
+.endereco-fieldset {
+  border: 1.5px solid rgb(13, 148, 136);
+  border-radius: 8px;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  margin-bottom: 1.5rem;
+  background: #fff;
+}
+
+.endereco-fieldset legend {
+  color: rgb(13, 148, 136);
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+}
+
+.endereco-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.endereco-row label {
+  flex: 1;
+}
+
+.endereco-fieldset label {
+  display: block;
+  margin-bottom: 0.7rem;
+  color: rgb(33, 37, 41);
+  font-weight: 500;
+}
+
+.endereco-fieldset input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid rgb(13, 148, 136);
+  border-radius: 4px;
+  background: rgb(248, 249, 250);
+  color: rgb(33, 37, 41);
+  font-size: 1rem;
+}
+
 /* Rodapé */
 footer {
   background-color: rgb(33, 37, 41);
