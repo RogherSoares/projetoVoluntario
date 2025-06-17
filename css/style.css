@@ -8,15 +8,21 @@
 }
 
 body {
-    background-color: rgb(255, 249, 235); 
-    color: rgb(51, 51, 51); 
-    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(248, 249, 250); 
+    color: rgb(33, 37, 41); 
+}
+
+main {
+    flex-grow: 1;
 }
 
 /* Cabeçalho */
 header {
-    background-color: rgb(84, 110, 122); 
-    color: rgb(255, 255, 255);
+    background-color: rgb(13, 148, 136); 
+    color: #fff;
     padding: 1rem;
     text-align: center;
 }
@@ -37,9 +43,13 @@ p {
 
 /* Navegação */
 a {
+    color: rgb(249, 115, 22); 
     text-decoration: none;
-    color: rgb(255, 183, 77); 
-    font-size: 1.2rem;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: rgb(13, 148, 136);
 }
 
 ul {
@@ -64,7 +74,7 @@ nav a:hover {
 
 /* Banner */
 .banner {
-    background: linear-gradient(to right, rgb(84, 110, 122), rgb(174, 213, 129));
+    background:  rgb(84, 110, 122);
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 3rem 1rem;
@@ -82,7 +92,7 @@ nav a:hover {
     transition: background 0.2s, color 0.2s;
 }
 .banner .btn:hover {
-    background-color: rgb(84, 110, 122); 
+    background-color: rgb(249, 115, 22); 
     color: rgb(255, 249, 235); 
 }
 
@@ -138,25 +148,25 @@ form input,
 form textarea,
 form select {
     padding: 0.5rem;
-    border: 1px solid rgb(174, 213, 129); 
+    border: 1px solid rgb(13, 148, 136);
     border-radius: 4px;
     font-size: 1rem;
-    background: rgb(255, 249, 235); 
-    color: rgb(51, 51, 51);
+    background: rgb(248, 249, 250);
+    color: rgb(33, 37, 41);
 }
 form input:focus,
 form textarea:focus,
 form select:focus {
-    outline: 2px solid rgb(255, 183, 77); 
+    outline: 2px solid rgb(249, 115, 22); 
 }
 
 form button,
 form input[type="submit"] {
-    background-color: rgb(255, 183, 77); 
-    color: rgb(84, 110, 122); 
-    padding: 0.75rem 1.5rem;
+    background-color: rgb(249, 115, 22); 
+    color: #fff;
     border: none;
     border-radius: 5px;
+    padding: 0.75rem 1.5rem;
     font-weight: bold;
     font-size: 1.1rem;
     cursor: pointer;
@@ -165,8 +175,8 @@ form input[type="submit"] {
 }
 form button:hover,
 form input[type="submit"]:hover {
-    background-color: rgb(84, 110, 122); 
-    color: rgb(255, 249, 235); 
+    background-color: rgb(13, 148, 136); 
+    color: #fff;
 }
 /* Estilo para campos de preenchimento automático */
 input:-webkit-autofill {
@@ -198,19 +208,25 @@ input:-webkit-autofill {
 
 .card {
   position: relative;
-  background: rgb(255, 255, 255);
-  padding: 1rem;
-  width: 320px;
+  background: #fff;
   border-radius: 8px;
-  box-shadow: 0 0 8px rgb(174, 213, 129, 0.2);
-  border-top: 4px solid rgb(255, 183, 77); 
+  box-shadow: 0 0 8px rgba(13, 148, 136, 0.10);
+  border-top: 4px solid rgb(13, 148, 136);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
 .card-titulo {
-    color: rgb(255, 183, 77); 
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    color: rgb(249, 115, 22); 
+    font-size: 1.3rem;
     font-weight: bold;
+    margin-bottom: 0.5rem;
     letter-spacing: 1px;
 }
 
@@ -218,8 +234,8 @@ input:-webkit-autofill {
     position: absolute;
     top: 8px;
     right: 8px;
-    background: rgb(255, 255, 255);
-    color: rgb(84, 110, 122);
+    background: rgb(255, 255, 255); 
+    color: rgb(13, 148, 136);
     border: none;
     border-radius: 50%;
     width: 32px;
@@ -231,15 +247,16 @@ input:-webkit-autofill {
     z-index: 2;
 }
 .btn-excluir:hover {
-    background: rgb(84, 110, 122);
-    color: rgb(255, 249, 235);
+    background: rgb(13, 148, 136); 
+    color: #fff;
 }
 
 /* Rodapé */
 footer {
+  background-color: rgb(33, 37, 41); 
+  color: #fff;
   text-align: center;
   padding: 1rem;
-  background: rgb(84, 110, 122); 
   margin-top: 2rem;
 }
 
