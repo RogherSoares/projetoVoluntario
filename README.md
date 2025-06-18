@@ -47,13 +47,12 @@ ponte-solidaria/
 
 ## 🎨 Paleta de Cores Acolhedora
 
-| Elemento                | Cor                     | RGB              |
-|-------------------------|--------------------------|------------------|
-| Laranja suave           | `rgb(255, 183, 77)`      | Calor e ação     |
-| Verde esperança         | `rgb(174, 213, 129)`     | Esperança e vida |
-| Azul petróleo           | `rgb(84, 110, 122)`      | Confiança        |
-| Bege claro (fundo)      | `rgb(255, 249, 235)`     | Leveza visual    |
-| Cinza escuro (texto)    | `rgb(51, 51, 51)`        | Legibilidade     |
+| Elemento                | Cor                        | RGB                        |
+|-------------------------|----------------------------|----------------------------|
+| Verde-azulado           | `rgb(13, 148, 136)`      | Cabeçalho, botões, borda   |
+| Laranja                 | `rgb(249, 115, 22)`      | Botões, títulos, destaques |
+| Cinza claro             | `rgb(248, 249, 250)`     | Fundo da página, inputs    |
+| Cinza escuro            | `rgb(33, 37, 41)`        | Rodapé, texto principal    |
 
 Essas cores foram escolhidas para transmitir **empatia, segurança e acolhimento**, fundamentais no trabalho voluntário.
 
