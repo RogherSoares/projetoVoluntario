@@ -25,7 +25,7 @@ function criarCard(n, idx) {
         </p>
       </div>
       <div class="card-contato">
-        <p><strong>Contato:</strong> ${n.contato}</p>
+        <p><strong>Contato:</strong> <br>${n.contato}</p>
       </div>
     </div>
   `;

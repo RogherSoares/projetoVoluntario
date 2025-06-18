@@ -240,19 +240,19 @@ input:-webkit-autofill {
 .card-endereco p {
   margin: 0.1rem 0;
   color: rgb(84, 110, 122);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .card-contato p {
   margin: 0.1rem 0;
   color: rgb(249, 115, 22);
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .card-titulo {
   color: rgb(249, 115, 22);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.2rem;
   letter-spacing: 0.5px;
@@ -428,12 +428,7 @@ footer {
 
 @media (max-width: 600px) {
 
-  header,
-  .banner,
-  .como-funciona,
-  form,
-  .cards,
-  footer {
+  header, .banner, .como-funciona, form, .cards, footer {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
@@ -450,8 +445,7 @@ footer {
     padding: 2rem 0.5rem;
   }
 
-  .passo,
-  .card {
+  .passo, .card {
     width: 100%;
     min-width: unset;
     max-width: 100%;
@@ -462,8 +456,7 @@ footer {
     max-width: 100%;
   }
 
-  #pesquisa,
-  #filtroTipoAjuda {
+  #pesquisa, #filtroTipoAjuda {
     width: 100%;
     max-width: 100%;
   }
