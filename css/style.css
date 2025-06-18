@@ -166,7 +166,7 @@ form select:focus {
 form button,
 form input[type="submit"] {
   background-color: rgb(249, 115, 22);
-  color: #fff;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
   padding: 0.75rem 1.5rem;
@@ -180,7 +180,7 @@ form input[type="submit"] {
 form button:hover,
 form input[type="submit"]:hover {
   background-color: rgb(13, 148, 136);
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 /* Estilo para campos de preenchimento automático */
@@ -212,29 +212,53 @@ input:-webkit-autofill {
 }
 
 .card {
-  position: relative;
   background: rgb(255, 255, 255);
   border-radius: 8px;
-  box-shadow: 0 0 8px rgba(13, 148, 136, 0.10);
+  box-shadow: 0 0 8px rgba(13, 148, 136, 0.08);
   border-top: 4px solid rgb(13, 148, 136);
-  padding: 1rem;
+  padding: 1.2rem 1rem 1rem 1rem;
   margin-bottom: 1.5rem;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+.card-info p {
+  margin: 0.2rem 0;
+  color: rgb(33, 37, 41);
+  font-size: 1.3rem;
+}
+
+.card-divider {
+  border: none;
+  border-top: 1.5px solid rgb(248, 249, 250);
+  margin: 0.5rem 0;
+}
+
+.card-endereco p {
+  margin: 0.1rem 0;
+  color: rgb(84, 110, 122);
+  font-size: 1rem;
+}
+
+.card-contato p {
+  margin: 0.1rem 0;
+  color: rgb(249, 115, 22);
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .card-titulo {
   color: rgb(249, 115, 22);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
-  letter-spacing: 1px;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.5px;
 }
 
+/* Botão Excluir */
 .btn-excluir {
   position: absolute;
   top: 8px;

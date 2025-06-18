@@ -9,11 +9,24 @@ function criarCard(n, idx) {
     <div class="card">
       <button class="btn-excluir" data-id="${idx}" title="Excluir necessidade">&times;</button>
       <h3 class="card-titulo">${n.titulo}</h3>
-      <p><strong>Instituição:</strong> ${n.instituicao}</p>
-      <p><strong>Tipo de Ajuda:</strong> ${n.tipoAjuda}</p>
-      <p><strong>Descrição:</strong> ${n.descricao}</p>
-      <p><strong>Local:</strong> ${n.cidade}/${n.estado}</p>
-      <p><strong>Contato:</strong> ${n.contato}</p>
+      <div class="card-info">
+        <p>${n.instituicao}</p>
+        <p> ${n.tipoAjuda}</p>
+        <p>${n.descricao}</p>
+      </div>
+      <hr class="card-divider">
+      <div class="card-endereco">
+        <p><strong>Endereço:</strong></p>
+        <p>
+          ${n.rua ? n.rua + ', ' : ''}${n.numero ? n.numero + ' - ' : ''}<br>${n.bairro ? n.bairro + ', ' : ''}<br>
+          ${n.cidade ? n.cidade + ' - ' : ''}${n.estado ? n.estado : ''}
+          ${n.cep ? '<br>CEP: ' + n.cep : ''}
+          ${n.complemento ? '<br>' + n.complemento : ''}
+        </p>
+      </div>
+      <div class="card-contato">
+        <p><strong>Contato:</strong> ${n.contato}</p>
+      </div>
     </div>
   `;
 }
